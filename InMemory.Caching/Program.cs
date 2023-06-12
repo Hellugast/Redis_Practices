@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddStackExchangeRedisCache(options => options.Configuration = "localhost:1453");
+builder.Services.AddMemoryCache(); // 
 
 var app = builder.Build();
 
